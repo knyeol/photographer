@@ -1,0 +1,31 @@
+:root {
+  --purple: #9200d6;
+}
+
+body {
+  margin-bottom: 100px;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  background: var(--purple);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
