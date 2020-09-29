@@ -34,6 +34,12 @@ img {
 
 @media (min-width: 768px) {
   body {
-    margin-top: 50px;
+    margin-top: 45px;
+  }
+
+  .link {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

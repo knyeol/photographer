@@ -9,12 +9,22 @@ navbar-container {
 }
 
 navbar-content {
+  position: relative;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  justify-content: center;
   height: 100%;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+navbar-items {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar-item {
@@ -29,9 +39,41 @@ navbar-content {
   navbar-container {
     top: 0;
     background: #ffffff;
-    box-shadow: 0 0 10px 0 #00000031;
+    box-shadow: 0 0 10px 0 #00000056;
   }
+
+  navbar-content {
+    position: relative;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar-home {
+    z-index: 100;
+  }
+
+  .navbar-icon {
+    display: block;
+    position: absolute;
+    background: var(--purple);
+    color: #ffffff;
+    height: 100%;
+    width: 45px;
+    padding-left: 12px;
+    padding-right: 12px;
+    left: 25px;
+  }
+
+  navbar-items {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 25px;
+  }
+
   .navbar-item {
     color: #000000;
+    margin-left: 40px;
   }
 }

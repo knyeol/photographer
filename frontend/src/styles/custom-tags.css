@@ -15,3 +15,9 @@ content-container {
     max-width: 650px;
   }
 }
+
+@media (min-width: 768px) {
+  content-container {
+    margin-bottom: 35px;
+  }
+}
