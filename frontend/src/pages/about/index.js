@@ -6,7 +6,9 @@ function About() {
       <text-subtitle>About</text-subtitle>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
       <img src={require("../../images/camera.jpg")} alt="camera" />
-      <text-header>I've taken for photos for 10 years.</text-header>
+      <text-header>
+        I've taken for landscape photos for over 10 years.
+      </text-header>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At, tempora
         accusamus rerum voluptatum minima animi quibusdam perferendis in

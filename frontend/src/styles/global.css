@@ -1,5 +1,7 @@
 :root {
   --purple: #9200d6;
+  --width-tablet: 480px;
+  --width-desktop: 768px;
 }
 
 body {
@@ -28,4 +30,10 @@ img {
   padding-bottom: 10px;
   font-size: 1.1rem;
   font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-top: 50px;
+  }
 }

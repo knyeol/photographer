@@ -54,3 +54,15 @@ social-container a > * {
   height: 100%;
   width: 100%;
 }
+
+@media (min-width: 480px) {
+  portfolio-container {
+    columns: 2;
+  }
+}
+
+@media (min-width: 768px) {
+  portfolio-container {
+    columns: 3;
+  }
+}

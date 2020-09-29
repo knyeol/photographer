@@ -24,3 +24,14 @@ navbar-content {
   height: 100%;
   line-height: 45px;
 }
+
+@media (min-width: 768px) {
+  navbar-container {
+    top: 0;
+    background: #ffffff;
+    box-shadow: 0 0 10px 0 #00000031;
+  }
+  .navbar-item {
+    color: #000000;
+  }
+}

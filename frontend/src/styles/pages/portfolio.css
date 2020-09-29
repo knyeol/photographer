@@ -21,3 +21,9 @@ modal-container {
   left: 0;
   transition: opacity 200ms ease-in-out;
 }
+
+@media (min-width: 768px) {
+  images-container {
+    columns: 3;
+  }
+}
