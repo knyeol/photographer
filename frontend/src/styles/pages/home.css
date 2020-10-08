@@ -20,6 +20,7 @@ portfolio-container img:not(:last-child) {
 }
 
 email-container {
+  cursor: pointer;
   display: inline-flex;
   background: #9200d617;
   align-items: center;
@@ -64,20 +65,14 @@ social-container a > * {
 @media (min-width: 768px) {
   main-background {
     display: block;
-    background: #f3f9fd;
     margin-bottom: 75px;
-    padding-top: 30px;
     height: 400px;
   }
 
   main-container {
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 60px;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-  }
-
-  portfolio-container {
-    columns: 3;
   }
 }

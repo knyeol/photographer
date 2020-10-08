@@ -9,6 +9,10 @@ images-container {
   column-gap: 5px;
 }
 
+images-container img:hover {
+  cursor: pointer;
+}
+
 modal-container {
   position: fixed;
   background: #000000e1;
@@ -20,6 +24,12 @@ modal-container {
   top: 0;
   left: 0;
   transition: opacity 200ms ease-in-out;
+  z-index: 999;
+}
+
+modal-container,
+modal-container *:hover {
+  cursor: zoom-out !important;
 }
 
 @media (min-width: 768px) {
