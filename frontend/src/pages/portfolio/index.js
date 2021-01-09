@@ -15,10 +15,10 @@ function Portfolio() {
   return (
     <content-container>
       <text-subtitle>All Works</text-subtitle>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus!</p>
+      <p>Check out Jane's landscape shots!</p>
       <images-container>
         {files &&
-          files.map((file) => (
+          files.map(file => (
             <Modal
               key={file.id}
               id={file.id}
