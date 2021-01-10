@@ -10,8 +10,8 @@ function Portfolio() {
 
   useEffect(() => {
     if (!data) return;
-    setIds(data.portfolios.map((data) => data.id));
-    setImages(data.portfolios.map((data) => data.image.formats.large.url));
+    setIds(data.portfolios.map(data => data.id));
+    setImages(data.portfolios.map(data => data.image.formats.large.url));
   }, [data]);
 
   return (
