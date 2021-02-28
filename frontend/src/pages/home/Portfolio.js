@@ -10,8 +10,8 @@ function Portfolio() {
 
   useEffect(() => {
     if (!data) return;
-    setIds(data.portfolios.map(data => data.id));
-    setImages(data.portfolios.map(data => data.image.formats.large.url));
+    setIds(data.portfolios.map((data) => data.id));
+    setImages(data.portfolios.map((data) => data.image.formats.large.url));
   }, [data]);
 
   return (
@@ -21,10 +21,7 @@ function Portfolio() {
       <portfolio-container>
         {images &&
           images.map((image, index) => (
-            <LazyLoadImage
-              key={ids[index]}
-              src={`${process.env.REACT_APP_URL}${image}`}
-            />
+            <LazyLoadImage key={ids[index]} src={`${image}`} />
           ))}
       </portfolio-container>
       <a className="link" href="/portfolio">

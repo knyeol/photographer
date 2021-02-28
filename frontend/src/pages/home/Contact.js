@@ -6,13 +6,23 @@ import {
   FaClipboard,
 } from "react-icons/fa";
 
+async function handleClick(e) {
+  const text = e.target.innerText;
+  try {
+    await navigator.clipboard.writeText(text);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 function Contact() {
   return (
     <content-container>
       <text-subtitle>Contact</text-subtitle>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
       <email-container>
-        <span>photographer@email.com</span>&ensp;
+        <span onClick={(e) => handleClick(e)}>photographer@email.com</span>
+        &ensp;
         <FaClipboard className="email-icon" />
       </email-container>
       <social-container>

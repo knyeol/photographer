@@ -18,12 +18,12 @@ function Portfolio() {
       <p>Check out Jane's landscape shots!</p>
       <images-container>
         {files &&
-          files.map(file => (
+          files.map((file) => (
             <Modal
               key={file.id}
               id={file.id}
-              imageSrc={`${process.env.REACT_APP_URL}${file.formats.small.url}`}
-              modalSrc={`${process.env.REACT_APP_URL}${file.formats.large.url}`}
+              imageSrc={`${file.formats.small.url}`}
+              modalSrc={`${file.formats.large.url}`}
             />
           ))}
       </images-container>
